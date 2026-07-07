@@ -1,0 +1,46 @@
+.circular-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.circular-skill-ring-wrap {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.circle-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.08);
+}
+
+.circle-progress {
+  fill: none;
+  stroke: var(--gold);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1.4s var(--ease-out);
+}
+
+.circular-skill-percent {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.circular-skill-label {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}

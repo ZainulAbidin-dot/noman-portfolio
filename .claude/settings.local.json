@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{ print length, NR }' \"C:\\\\Users\\\\Murtaza\\\\Downloads\\\\index.html\")",
+      "Bash(awk 'NR==534{print substr\\($0,1,500\\)}' \"C:\\\\Users\\\\Murtaza\\\\Downloads\\\\index.html\")",
+      "Bash(npm -v)",
+      "Bash(npm install *)"
+    ]
+  }
+}

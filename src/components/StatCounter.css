@@ -1,0 +1,31 @@
+.stat-counter {
+  padding: 22px 18px;
+  text-align: center;
+  transition: transform 0.35s var(--ease-out), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.stat-counter:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-dim);
+  box-shadow: var(--shadow-gold);
+}
+
+.stat-value {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.stat-suffix {
+  color: var(--gold);
+}
+
+.stat-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}

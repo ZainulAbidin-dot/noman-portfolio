@@ -1,0 +1,122 @@
+.rings-scale-wrap {
+  position: relative;
+  width: min(460px, 86vw);
+  height: min(460px, 86vw);
+  margin: 0 auto;
+}
+
+.rotating-rings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 460px;
+  height: 460px;
+  transform-origin: center;
+  display: grid;
+  place-items: center;
+}
+
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.ring-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px dashed rgba(167, 139, 250, 0.25);
+}
+
+.ring-track-1 {
+  border-color: rgba(245, 196, 81, 0.2);
+}
+
+.ring-track-2 {
+  border-color: rgba(192, 38, 212, 0.25);
+}
+
+.ring-spin {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.spin-forward {
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.spin-reverse {
+  animation-name: spinReverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.orbit-icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.orbit-icon-inner {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.orbit-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-left: -26px;
+  margin-top: -26px;
+  border-radius: 14px;
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  text-align: center;
+  padding: 4px;
+  box-shadow: 0 6px 18px -8px rgba(139, 92, 246, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.orbit-icon:hover {
+  transform: scale(1.18);
+  border-color: var(--gold-dim);
+  box-shadow: 0 0 22px rgba(245, 196, 81, 0.45);
+}
+
+.rings-core {
+  position: relative;
+  z-index: 2;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--purple-700), var(--neon-purple));
+  box-shadow: 0 0 50px rgba(139, 92, 246, 0.55);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  animation: pulseGlow 3.5s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  .orbit-icon {
+    font-size: 0.62rem;
+  }
+}
