@@ -1,12 +1,13 @@
 import { ringIcons } from '../data/content'
 import useElementScale from '../hooks/useElementScale'
 import './RotatingRings.css'
+import profileImage from '../assets/profile.png'
 
 // Ring config: radius (px), spin duration (s), spin direction
 const RING_CONFIG = [
-  { radius: 230, duration: 34, reverse: false },
-  { radius: 160, duration: 26, reverse: true },
-  { radius: 90, duration: 18, reverse: false },
+  { radius: 280, duration: 34, reverse: false },
+  { radius: 200, duration: 26, reverse: true },
+  { radius: 120, duration: 18, reverse: false },
 ]
 
 const BASE_SIZE = 460
@@ -16,7 +17,7 @@ export default function RotatingRings() {
 
   return (
     <div className="rings-scale-wrap" ref={wrapRef}>
-    <div className="rotating-rings" aria-hidden="true" style={{ transform: `translate(-50%, -50%) scale(${scale})` }}>
+    <div className="rotating-rings" aria-hidden="true" style={{ transform: `translate(-50%, -35%) scale(${scale})` }}>
       {RING_CONFIG.map((ring, ringIndex) => {
         const icons = ringIcons[ringIndex] || []
         const step = 360 / icons.length
@@ -24,7 +25,7 @@ export default function RotatingRings() {
           <div
             key={ringIndex}
             className="ring"
-            style={{ width: ring.radius * 2, height: ring.radius * 2 }}
+            style={{ width: ring.radius * 2, height: ring.radius * 2, zIndex: -1}}
           >
             <div className={`ring-track ring-track-${ringIndex}`} />
             <div
@@ -54,8 +55,9 @@ export default function RotatingRings() {
           </div>
         )
       })}
-      <div className="rings-core">
-        <span>&lt;/&gt;</span>
+      <div className="z-100">
+        <img src={profileImage} alt="Profile" srcset="" />
+        {/* <span>&lt;/&gt;</span> */}
       </div>
     </div>
     </div>
