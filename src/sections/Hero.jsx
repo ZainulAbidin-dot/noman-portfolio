@@ -1,4 +1,3 @@
-import HeroSection from '../components/HeroSection'
 import RotatingRings from '../components/RotatingRings'
 import './Hero.css'
 

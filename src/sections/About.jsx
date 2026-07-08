@@ -1,5 +1,5 @@
 import Reveal from '../components/Reveal'
-import StatCounter from '../components/StatCounter'
+import StatCounter from '../components/StatsCard'
 import { stats } from '../data/content'
 import './About.css'
 

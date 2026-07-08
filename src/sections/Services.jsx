@@ -22,7 +22,7 @@ export default function Services() {
 
         <div className="service-cards-grid">
           {services.map((service, i) => (
-            <Reveal key={service.title} delay={i * 90} className="service-card">
+            <Reveal key={service.title} delay={i * 90} className="service-card ">
               <div className="service-icon">
                 <Icon name={service.icon} />
               </div>

@@ -1,5 +1,5 @@
 import useCountUp from '../hooks/useCountUp'
-import './StatCounter.css'
+import './StatsCard.css'
 
 export default function StatCounter({ value, suffix = '', label }) {
   const [ref, count] = useCountUp(value)

@@ -15,80 +15,94 @@
 .service-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 /* ===========================================
    SERVICE CARD
 =========================================== */
 
+/* ===========================================
+   SERVICE CARD WITH SPINNING CONIC BORDER
+=========================================== */
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 .service-card {
-  --border-radius: 20px;
-  --border-width: 1px;
-  --accent: var(--neon-purple);
-  --accent-soft: rgba(168, 85, 247, 0.42);
+  /* --border-radius: 20px; */
 
   position: relative;
   overflow: hidden;
+
   border-radius: var(--border-radius);
   padding: 32px 26px;
-  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
-  border: var(--border-width) solid rgba(255,255,255,0.12);
-  backdrop-filter: blur(14px);
-  isolation: isolate;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
 
-  transition:
-    transform .45s var(--ease-out),
-    background .45s ease,
-    box-shadow .45s ease,
-    border-color .45s ease;
+  background: rgba(17, 17, 24, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  isolation: isolate;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
 }
 
 .service-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: inherit;
   padding: 1px;
+  border-radius: inherit;
   background: conic-gradient(
-    from 0deg,
-    transparent 0%,
-    transparent 24%,
-    var(--accent) 42%,
-    rgba(255,255,255,0.95) 58%,
-    transparent 82%
+    from var(--angle),
+    transparent 0deg,
+    rgba(180, 179, 179, 0.9) 12deg,
+    rgba(168, 85, 247, 0.82) 48deg,
+    rgba(255, 255, 255, 0.35) 82deg,
+    transparent 125deg,
+    transparent 360deg
   );
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  opacity: 0.9;
-  animation: borderSweep 2.6s linear infinite;
+  animation: spin-border 4s ease-in-out infinite;
   pointer-events: none;
+  z-index: 0;
+  opacity: 0.95;
+  filter: blur(0.18px);
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: calc(var(--border-radius) - 1px);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(14px);
   z-index: 0;
 }
 
-@keyframes borderSweep {
-  to {
-    transform: rotate(1turn);
-  }
+.service-card > * {
+  position: relative;
+  z-index: 1;
 }
 
-.service-card>* {
-  position: relative;
-  z-index: 2;
+@keyframes spin-border {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-
-  background: var(--glass-bg-strong);
-
   box-shadow:
-    0 20px 50px -20px rgba(139,92,246,.55),
-    0 0 40px rgba(168,85,247,.2);
+    0 20px 50px rgba(168, 85, 247, 0.25),
+    0 0 40px rgba(255, 255, 255, 0.12);
 }
 
 /* ===========================================
