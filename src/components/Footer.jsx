@@ -1,5 +1,7 @@
 import { navLinks } from '../data/content'
 import './Footer.css'
+import { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 
 const socials = ['GitHub', 'LinkedIn', 'X', 'YouTube']
 
@@ -9,6 +11,13 @@ export default function Footer() {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
+   useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"project-discovery-call"});
+      cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, [])
+
   return (
     <footer className="site-footer">
       <div className="container footer-inner">
@@ -16,6 +25,8 @@ export default function Footer() {
           <span className="logo-mark">YN</span>
           <span className="footer-brand-text">Your Name</span>
           <p className="footer-tagline">Building modern, thoughtful web experiences.</p>
+          <button className="btn btn-primary" style={{ marginTop: '1rem', maxWidth: '150px' }} data-cal-namespace="project-discovery-call" data-cal-link="noman-abdul-maliq/project-discovery-call" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+           >Book a Call</button>
         </div>
 
         <nav className="footer-nav">
