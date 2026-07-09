@@ -37,9 +37,10 @@
 .logo-mark {
   display: grid;
   place-items: center;
-  width: 150px;
-  height: 40px;
-  border-radius: 12px;
+  width: 200px;
+  height: 58px;
+  border-radius: 7px;
+  padding: 6px 12px;
   /* background: linear-gradient(135deg, var(--cyan-500), var(--neon-cyan)); */
   color: #fff;
   font-size: 0.85rem;
