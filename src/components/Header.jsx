@@ -20,7 +20,7 @@ export default function Header() {
       <div className="container header-inner">
         <a href="#home" className="logo anim-fadeInDown" onClick={handleNavClick('home')}>
           <span className="logo-mark">YN</span>
-          <span className="logo-text">Your Name</span>
+          <span className="logo-text">Noman Abdul-Maliq</span>
         </a>
 
         <nav className={`main-nav ${menuOpen ? 'is-open' : ''}`}>
