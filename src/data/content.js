@@ -8,9 +8,40 @@ export const navLinks = [
 
 // Rings closest-to-farthest, mirrors a 13 / 10 / 5 icon distribution
 export const ringIcons = [
-  ['JS', 'CSS', 'HTML', 'TS', 'React', 'Vue', 'Node', 'Git', 'MySQL', 'Bootstrap', 'Sass', 'AWS', 'Linux'],
-  ['API', 'Docker', 'Figma', 'GraphQL', 'Redis', 'Webpack', 'Nginx', 'Photoshop', 'Jest', 'CI/CD'],
-  ['Cloud', 'AI', 'Auto', 'UX', 'DevOps'],
+  [
+    { name: 'Photoshop', imgPath: 'adobe-photoshop.svg' },
+    { name: 'Antigravity', imgPath: 'antigravity-color.svg' },
+    { name: 'Claude', imgPath: 'claude-color.svg' },
+    { name: 'ClickUp', imgPath: 'clickup.svg' },
+    { name: 'CPanel', imgPath: 'cpanel.svg' },
+    { name: 'Sass', imgPath: 'css3.svg' },
+    { name: 'DeepSeek', imgPath: 'deepseek.svg' },
+    { name: 'Discord', imgPath: 'discord.svg' },
+    { name: 'Facebook', imgPath: 'facebook.svg' },
+    { name: 'Figma', imgPath: 'figma.svg' },
+    { name: 'Git', imgPath: 'git.svg' },
+    { name: 'Google Analytics', imgPath: 'google-analytics.svg' },
+    { name: 'Google Meet', imgPath: 'google-meet.svg' },
+  ],
+  [
+    { name: 'Google Cloud', imgPath: 'googlecloud-color.svg' },
+    { name: 'HTML5', imgPath: 'html5.svg' },
+    { name: 'Instagram', imgPath: 'instagram.svg' },
+    { name: 'Javascript', imgPath: 'javascript.svg' },
+    { name: 'LinkedIn', imgPath: 'linkedin.svg' },
+    { name: 'Lovable', imgPath: 'lovable.svg' },
+    { name: 'NodeJS', imgPath: 'nodejs.svg' },
+    { name: 'PHP', imgPath: 'php.svg' },
+    { name: 'React JS', imgPath: 'reactjs.svg' },
+    { name: 'Shopify', imgPath: 'shopify.svg' },
+  ],
+  [
+    { name: 'Trello', imgPath: 'trello.svg' },
+    { name: 'Supabase', imgPath: 'supabase.svg' },
+    { name: 'Wordpress', imgPath: 'wordpress.svg' },
+    { name: 'Paypal', imgPath: 'paypal.svg' },
+    { name: 'Webflow', imgPath: 'webflow.svg' },
+  ],
 ]
 
 export const stats = [

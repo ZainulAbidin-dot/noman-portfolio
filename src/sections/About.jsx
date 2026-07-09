@@ -2,6 +2,7 @@ import Reveal from '../components/Reveal'
 import StatCounter from '../components/StatsCard'
 import { stats } from '../data/content'
 import './About.css'
+import placeholderImage from '../assets/profile2.png'
 
 export default function About() {
   return (
@@ -33,7 +34,7 @@ export default function About() {
         <Reveal className="about-visual" delay={150} zoom>
           <div className="about-image-frame">
             <div className="about-image-placeholder">
-              <span>Your Photo</span>
+              <img src={placeholderImage} alt="Profile" style={{ height: '70%', margin:" -5rem auto" }} />
             </div>
           </div>
         </Reveal>

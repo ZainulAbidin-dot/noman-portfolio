@@ -3,6 +3,7 @@ import useStickyHeader from '../hooks/useStickyHeader'
 import useScrollSpy from '../hooks/useScrollSpy'
 import { navLinks } from '../data/content'
 import './Header.css'
+import logoMark from '../assets/images/logo.png'
 
 export default function Header() {
   const isScrolled = useStickyHeader(30)
@@ -19,8 +20,8 @@ export default function Header() {
     <header className={`site-header ${isScrolled ? 'is-scrolled' : ''}`}>
       <div className="container header-inner">
         <a href="#home" className="logo anim-fadeInDown" onClick={handleNavClick('home')}>
-          <span className="logo-mark">YN</span>
-          <span className="logo-text">Noman Abdul-Maliq</span>
+          <img src={logoMark} alt="Logo" className="logo-mark" />
+          {/* <span className="logo-text">Noman Abdul-Maliq</span> */}
         </a>
 
         <nav className={`main-nav ${menuOpen ? 'is-open' : ''}`}>

@@ -24,7 +24,7 @@ export default function Hero() {
         >
           <span className="eyebrow anim-fadeInDown">Available for freelance work</span>
           <h1 className="hero-title anim-fadeInUp">
-            Hi, I&apos;m <span className="gold-text">Your Name</span>
+            Hi, I&apos;m <span className="gold-text">Noman Abdul Maliq</span>
           </h1>
           <h2 className="hero-subtitle anim-fadeInUp" style={{ animationDelay: '150ms' }}>
             Web Developer, Digital Creator &amp; Educator

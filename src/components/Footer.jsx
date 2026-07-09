@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-brand">
           <img src={logo} alt="Logo" srcset="" style={{ maxWidth: '40%', height: 'auto', margin: '0', padding: '0' }} />
-          <span className="footer-brand-text">Noman Abdul-Maliq</span>
+          {/* <span className="footer-brand-text">Noman Abdul-Maliq</span> */}
           <p className="footer-tagline">Building modern, thoughtful web experiences.</p>
           <button className="btn btn-primary" style={{ marginTop: '1rem', maxWidth: '150px' }} data-cal-namespace="project-discovery-call" data-cal-link="noman-abdul-maliq/project-discovery-call" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
            >Book a Call</button>

@@ -32,11 +32,11 @@ export default function RotatingRings() {
               className={`ring-spin ${ring.reverse ? 'spin-reverse' : 'spin-forward'}`}
               style={{ animationDuration: `${ring.duration}s` }}
             >
-              {icons.map((label, i) => {
+              {icons.map((icon, i) => {
                 const angle = step * i
                 return (
                   <div
-                    key={label}
+                    key={icon.name}
                     className="orbit-icon-wrapper"
                     style={{
                       transform: `rotate(${angle}deg) translateX(${ring.radius}px) rotate(-${angle}deg)`,
@@ -46,7 +46,12 @@ export default function RotatingRings() {
                       className={`orbit-icon-inner ${ring.reverse ? 'spin-forward' : 'spin-reverse'}`}
                       style={{ animationDuration: `${ring.duration}s` }}
                     >
-                      <span className="orbit-icon">{label}</span>
+                      <img
+                        src={new URL(`../assets/images/${icon.imgPath}`, import.meta.url).href}
+                        alt={icon.name}
+                        className="orbit-icon"
+                        title={icon.name}
+                      />
                     </div>
                   </div>
                 )
