@@ -4,16 +4,16 @@
   --bg-secondary: #120a24;
   --bg-tertiary: #180f2e;
 
-  --purple-900: #2e1065;
-  --purple-700: #6d28d9;
-  --purple-500: #8b5cf6;
-  --purple-400: #a78bfa;
-  --neon-purple: #c026d3;
-  --neon-purple-soft: rgba(192, 38, 212, 0.35);
+  --cyan-900: #14407b;
+  --cyan-700: #288aa7;
+  --cyan-500: #46c2d4;
+  --cyan-400: #50e1e3;
+  --neon-cyan: #50e1e3;
+  --neon-cyan-soft: rgba(80, 225, 227, 0.35);
 
-  --gold: #f5c451;
-  --gold-soft: #fde68a;
-  --gold-dim: rgba(245, 196, 81, 0.35);
+  --gold: #50e1e3;
+  --gold-soft: #50e1e3;
+  --gold-dim: rgba(80, 225, 227, 0.35);
 
   --text-primary: #f6f4fb;
   --text-secondary: #b6aed0;
@@ -23,7 +23,7 @@
   --glass-bg-strong: rgba(255, 255, 255, 0.07);
   --glass-border: rgba(255, 255, 255, 0.09);
 
-  --shadow-purple: 0 0 40px rgba(139, 92, 246, 0.35);
+  --shadow-cyan: 0 0 40px rgba(80, 225, 227, 0.35);
   --shadow-gold: 0 0 40px rgba(245, 196, 81, 0.25);
 
   --font-main: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -89,7 +89,7 @@ button {
 }
 
 .gold-text {
-  background: linear-gradient(120deg, var(--gold-soft), var(--gold) 60%, #d99a1f);
+  background: linear-gradient(120deg, #50e1e3, #50e1e3 60%, #46c2d4);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -133,7 +133,7 @@ button {
 }
 
 .btn-primary {
-  background: linear-gradient(120deg, var(--purple-500), var(--neon-purple));
+  background: linear-gradient(120deg, var(--cyan-500), var(--neon-cyan));
   color: #fff;
   box-shadow: 0 8px 30px -8px rgba(139, 92, 246, 0.6);
 }
@@ -152,7 +152,7 @@ button {
 
 .btn-outline:hover {
   transform: translateY(-3px);
-  border-color: var(--gold-dim);
+  border-color: rgba(80, 225, 227, 0.35);
   box-shadow: var(--shadow-gold);
 }
 

@@ -57,9 +57,9 @@
   background: conic-gradient(
     from var(--angle),
     transparent 0deg,
-    rgba(180, 179, 179, 0.9) 12deg,
-    rgba(168, 85, 247, 0.82) 48deg,
-    rgba(255, 255, 255, 0.35) 82deg,
+    rgba(80, 225, 227, 0.9) 12deg,
+    rgba(40, 138, 167, 0.82) 48deg,
+    rgba(70, 194, 212, 0.35) 82deg,
     transparent 125deg,
     transparent 360deg
   );
@@ -101,7 +101,7 @@
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow:
-    0 20px 50px rgba(168, 85, 247, 0.25),
+    0 20px 50px rgba(80, 225, 227, 0.25),
     0 0 40px rgba(255, 255, 255, 0.12);
 }
 
@@ -122,8 +122,8 @@
 
   background: linear-gradient(
     135deg,
-    var(--purple-700),
-    var(--neon-purple)
+    var(--cyan-700),
+    var(--neon-cyan)
   );
 
   color: #fff;
@@ -137,7 +137,7 @@
   transform: rotate(-8deg) scale(1.08);
 
   box-shadow:
-    0 0 24px rgba(168,85,247,.45);
+    0 0 24px rgba(80, 225, 227, 0.45);
 }
 
 .service-title {
@@ -172,7 +172,7 @@
 }
 
 .skill-category-card:hover {
-  border-color: rgba(139,92,246,.4);
+  border-color: rgba(80, 225, 227, 0.4);
   transform: translateY(-4px);
 }
 

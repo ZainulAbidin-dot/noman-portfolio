@@ -95,7 +95,7 @@
 
 .orbit-icon:hover {
   transform: scale(1.18);
-  border-color: var(--gold-dim);
+  border-color: rgba(80, 225, 227, 0.35);
   box-shadow: 0 0 22px rgba(245, 196, 81, 0.45);
 }
 
@@ -107,7 +107,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--purple-700), var(--neon-purple));
+  background: linear-gradient(135deg, var(--cyan-700), var(--neon-cyan));
   box-shadow: 0 0 50px rgba(139, 92, 246, 0.55);
   font-weight: 700;
   font-size: 1.1rem;

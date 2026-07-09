@@ -67,7 +67,7 @@
 .form-row input:focus,
 .form-row textarea:focus {
   outline: none;
-  border-color: var(--purple-500);
+  border-color: var(--cyan-500);
   box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25);
 }
 

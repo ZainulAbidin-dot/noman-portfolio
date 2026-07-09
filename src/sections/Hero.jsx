@@ -9,7 +9,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="hero section">
-      <div className="hero-glow hero-glow-purple" />
+      <div className="hero-glow hero-glow-cyan" />
       <div className="hero-glow hero-glow-gold" />
 
       <div className="container hero-inner" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

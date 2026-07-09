@@ -23,7 +23,7 @@
 
 .circle-progress {
   fill: none;
-  stroke: var(--gold);
+  stroke: #50e1e3;
   stroke-linecap: round;
   transition: stroke-dashoffset 1.4s var(--ease-out);
 }

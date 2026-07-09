@@ -6,7 +6,7 @@
 
 .stat-counter:hover {
   transform: translateY(-6px);
-  border-color: var(--gold-dim);
+  border-color: rgba(80, 225, 227, 0.35);
   box-shadow: var(--shadow-gold);
 }
 

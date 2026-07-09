@@ -78,7 +78,7 @@
 
 .footer-social-icon:hover {
   transform: translateY(-4px);
-  border-color: var(--gold-dim);
+  border-color: rgba(80, 225, 227, 0.35);
   color: var(--gold);
 }
 

@@ -31,7 +31,7 @@
   aspect-ratio: 1 / 1;
   border-radius: 28px;
   padding: 3px;
-  background: linear-gradient(140deg, var(--purple-500), var(--gold));
+  background: linear-gradient(140deg, var(--cyan-500), var(--cyan-400));
 }
 
 .about-image-placeholder {

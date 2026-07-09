@@ -16,10 +16,10 @@
   z-index: 0;
 }
 
-.hero-glow-purple {
+.hero-glow-cyan {
   width: 480px;
   height: 480px;
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(80, 225, 227, 0.35);
   top: -120px;
   right: -100px;
 }

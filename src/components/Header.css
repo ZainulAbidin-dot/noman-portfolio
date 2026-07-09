@@ -40,7 +40,7 @@
   width: 38px;
   height: 38px;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--purple-500), var(--neon-purple));
+  background: linear-gradient(135deg, var(--cyan-500), var(--neon-cyan));
   color: #fff;
   font-size: 0.85rem;
   box-shadow: 0 6px 20px -6px rgba(139, 92, 246, 0.7);
@@ -68,7 +68,7 @@
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--purple-500), var(--gold));
+  background: linear-gradient(90deg, var(--cyan-500), var(--cyan-400));
   transition: width 0.3s var(--ease-out);
 }
 
