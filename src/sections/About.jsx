@@ -34,7 +34,7 @@ export default function About() {
         <Reveal className="about-visual" delay={150} zoom>
           <div className="about-image-frame">
             <div className="about-image-placeholder">
-              <img src={placeholderImage} alt="Profile" style={{ height: '70%', margin:" -5rem auto" }} />
+              <img src={placeholderImage} alt="Profile" style={{  margin:" -2rem auto", minWidth: "100%" }} />
             </div>
           </div>
         </Reveal>

@@ -5,9 +5,9 @@ import profileImage from '../assets/profile.png'
 
 // Ring config: radius (px), spin duration (s), spin direction
 const RING_CONFIG = [
-  { radius: 280, duration: 34, reverse: false },
-  { radius: 200, duration: 26, reverse: true },
-  { radius: 120, duration: 18, reverse: false },
+  { radius: 380, duration: 34, reverse: false },
+  { radius: 300, duration: 26, reverse: true },
+  { radius: 220, duration: 18, reverse: false },
 ]
 
 const BASE_SIZE = 460
@@ -17,7 +17,7 @@ export default function RotatingRings() {
 
   return (
     <div className="rings-scale-wrap" ref={wrapRef}>
-    <div className="rotating-rings" aria-hidden="true" style={{ transform: `translate(-50%, -35%) scale(${scale})` }}>
+    <div className="rotating-rings" aria-hidden="true" style={{ transform: `translate(-50%, -25%) scale(${scale})` }}>
       {RING_CONFIG.map((ring, ringIndex) => {
         const icons = ringIcons[ringIndex] || []
         const step = 360 / icons.length
@@ -61,7 +61,7 @@ export default function RotatingRings() {
         )
       })}
       <div className="z-100">
-        <img src={profileImage} alt="Profile" srcset="" />
+        <img src={profileImage} alt="Profile" srcset="" style={{ marginTop: '-4rem' }} />
         {/* <span>&lt;/&gt;</span> */}
       </div>
     </div>

@@ -26,8 +26,8 @@ export default function Services() {
               <div className="service-icon">
                 <Icon name={service.icon} />
               </div>
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
+              <h3 className="service-title" style={{ fontSize: '1.4rem' }}>{service.title}</h3>
+              <p className="service-description" style={{ fontSize: '1.05rem' }}>{service.description}</p>
             </Reveal>
           ))}
         </div>

@@ -1,8 +1,8 @@
 :root {
   --bg-void: #06040b;
-  --bg-primary: #0a0714;
-  --bg-secondary: #120a24;
-  --bg-tertiary: #180f2e;
+  --bg-primary: #070c14;
+  --bg-secondary: #0a0d24;
+  --bg-tertiary: #0f292e;
 
   --cyan-900: #14407b;
   --cyan-700: #288aa7;
@@ -28,11 +28,12 @@
 
   --font-main: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-  --container-width: 1200px;
+  --container-width: 90vw;
   --section-pad: clamp(72px, 10vw, 140px);
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 
 * {
   box-sizing: border-box;
@@ -135,12 +136,12 @@ button {
 .btn-primary {
   background: linear-gradient(120deg, var(--cyan-500), var(--neon-cyan));
   color: #fff;
-  box-shadow: 0 8px 30px -8px rgba(139, 92, 246, 0.6);
+  box-shadow: 0 8px 30px -8px rgba(92, 231, 246, 0.6);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 40px -6px rgba(192, 38, 212, 0.65);
+  box-shadow: 0 14px 40px -6px rgba(38, 180, 212, 0.65);
 }
 
 .btn-outline {
@@ -153,7 +154,7 @@ button {
 .btn-outline:hover {
   transform: translateY(-3px);
   border-color: rgba(80, 225, 227, 0.35);
-  box-shadow: var(--shadow-gold);
+  box-shadow: var(--shadow-cyan);
 }
 
 .glass-card {

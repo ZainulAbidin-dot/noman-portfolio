@@ -28,7 +28,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 1px dashed rgba(167, 139, 250, 0.25);
+  border: 1px dashed rgba(80, 225, 227, 0.25);
 }
 
 .ring-track-1 {
@@ -36,7 +36,7 @@
 }
 
 .ring-track-2 {
-  border-color: rgba(192, 38, 212, 0.25);
+  border-color: rgba(80, 225, 227, 0.25);
 }
 
 .ring-spin {
@@ -106,7 +106,7 @@
   display: grid;
   place-items: center;
   background: linear-gradient(135deg, var(--cyan-700), var(--neon-cyan));
-  box-shadow: 0 0 50px rgba(139, 92, 246, 0.55);
+  box-shadow: 0 0 50px rgba(80, 225, 227, 0.55);
   font-weight: 700;
   font-size: 1.1rem;
   color: #fff;

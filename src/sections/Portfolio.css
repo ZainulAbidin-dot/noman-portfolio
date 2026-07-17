@@ -23,7 +23,7 @@
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 24px 55px -22px rgba(139, 92, 246, 0.55);
+  box-shadow: var(--shadow-cyan);
 }
 
 .project-thumb {
@@ -92,7 +92,7 @@
   font-size: 0.75rem;
   padding: 5px 12px;
   border-radius: 999px;
-  background: rgba(139, 92, 246, 0.14);
+  background: var(--shadow-cyan);
   color: var(--cyan-400);
   font-weight: 500;
 }

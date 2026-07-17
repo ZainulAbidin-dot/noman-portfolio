@@ -2,7 +2,7 @@ import { navLinks } from '../data/content'
 import './Footer.css'
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-import logo from '../assets/images/logo.png'
+import logo from '../assets/profile.png'
 
 const socials = ['GitHub', 'LinkedIn', 'X', 'YouTube']
 
@@ -23,9 +23,9 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <div className="footer-brand">
-          <img src={logo} alt="Logo" srcset="" style={{ maxWidth: '40%', height: 'auto', margin: '0', padding: '0' }} />
-          {/* <span className="footer-brand-text">Noman Abdul-Maliq</span> */}
-          <p className="footer-tagline">Building modern, thoughtful web experiences.</p>
+          <img src={logo} alt="Logo" srcset="" style={{  maxHeight: '70vh', margin: '0', padding: '0' }} />
+          <span className="footer-brand-text">Ready to Discuss Your Project?</span>
+          <p className="footer-tagline">Noman Abdul-Maliq. Building modern, thoughtful web experiences.</p>
           <button className="btn btn-primary" style={{ marginTop: '1rem', maxWidth: '150px' }} data-cal-namespace="project-discovery-call" data-cal-link="noman-abdul-maliq/project-discovery-call" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
            >Book a Call</button>
         </div>
@@ -50,6 +50,17 @@ export default function Footer() {
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Your Project Title. All rights reserved.</p>
       </div>
+
+      <button
+        className="floating-cal-button btn btn-primary"
+        style={{marginBottom: "2rem"}}
+        data-cal-namespace="project-discovery-call"
+        data-cal-link="noman-abdul-maliq/project-discovery-call"
+        data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+        aria-label="Book a call"
+      >
+        Book a Call
+      </button>
     </footer>
   )
 }

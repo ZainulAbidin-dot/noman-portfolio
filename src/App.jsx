@@ -4,6 +4,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Services from './sections/Services'
 import Portfolio from './sections/Portfolio'
+import TestimonialSection from './sections/TestimonialSection'
 import Contact from './sections/Contact'
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <About />
         <Services />
         <Portfolio />
+        <TestimonialSection />
         <Contact />
       </main>
       <Footer />
