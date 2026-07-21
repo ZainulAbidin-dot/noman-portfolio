@@ -60,8 +60,12 @@ export default function RotatingRings() {
           </div>
         )
       })}
-      <div className="z-100">
-        <img src={profileImage} alt="Profile" srcset="" style={{ marginTop: '-4rem' }} />
+      <div className="z-100" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <img
+          src={profileImage}
+          alt="Profile"
+          style={{ display: 'block', width: '120%', maxWidth: '560px', height: 'auto', margin: '0 auto', transform: 'translateY(-15%)' }}
+        />
         {/* <span>&lt;/&gt;</span> */}
       </div>
     </div>

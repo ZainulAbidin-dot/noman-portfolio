@@ -26,7 +26,9 @@
 }
 
 .contact-text {
-  max-width: 480px;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .contact-form-wrap {

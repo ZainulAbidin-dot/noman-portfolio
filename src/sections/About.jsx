@@ -6,8 +6,8 @@ import placeholderImage from '../assets/profile2.png'
 
 export default function About() {
   return (
-    <section id="about" className="about section">
-      <div className="container about-inner">
+    <section id="about" className="about section" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
+      <div className="container about-inner" style={{ marginBottom: 0 }}>
         <Reveal className="about-text">
           <span className="eyebrow">About Me</span>
           <h2 className="section-heading">
@@ -34,13 +34,13 @@ export default function About() {
         <Reveal className="about-visual" delay={150} zoom>
           <div className="about-image-frame">
             <div className="about-image-placeholder">
-              <img src={placeholderImage} alt="Profile" style={{  margin:" -2rem auto", minWidth: "100%" }} />
+              <img src={placeholderImage} alt="Profile" style={{  margin:" -2rem auto", minWidth: "50%", maxWidth: "60%" }} />
             </div>
           </div>
         </Reveal>
       </div>
 
-      <div className="container">
+      <div className="container" >
         <div className="stats-grid">
           {stats.map((stat, i) => (
             <Reveal key={stat.label} delay={i * 120}>
